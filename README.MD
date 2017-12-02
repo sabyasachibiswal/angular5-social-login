@@ -106,3 +106,16 @@ export class SigninComponent implements OnInit {
   
 }
 ```
+
+
+
+In `signin.component.html`,
+
+```html
+<h1>
+     Sign in
+</h1>
+
+<button (click)="socialSignIn('facebook')"></button>
+<button (click)="socialSignIn('google')">              
+```

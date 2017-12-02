@@ -1,6 +1,6 @@
 {
   "name": "angular5-social-login",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Agular 5 : Social Login (Facebook and Google)",
   "scripts": {
     "build": "gulp build",

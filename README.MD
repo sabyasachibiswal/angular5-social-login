@@ -117,5 +117,5 @@ In `signin.component.html`,
 </h1>
 
 <button (click)="socialSignIn('facebook')"></button>
-<button (click)="socialSignIn('google')">              
+<button (click)="socialSignIn('google')"></button>              
 ```

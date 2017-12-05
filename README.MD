@@ -119,3 +119,16 @@ In `signin.component.html`,
 <button (click)="socialSignIn('facebook')">Sign in with Facebook</button>
 <button (click)="socialSignIn('google')">Signin in with Google</button>              
 ```
+
+
+
+### Facebook App Id : 
+
+You need to create your own app by going to [Facebook Developers](https://developers.facebook.com/) page.
+Add `Facebook login` under products and configure `Valid OAuth redirect URIs`.
+
+### Google Client Id : 
+
+Follow this official documentation on how to [
+Create a Google API Console project and client ID](https://developers.google.com/identity/sign-in/web/devconsole-project).
+

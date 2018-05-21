@@ -1,4 +1,4 @@
-Social login api for Angular 5. Includes Facebook and Google login.  
+Social login api for Angular 6. Includes Facebook and Google login.  
 
 [AOT](https://angular.io/guide/aot-compiler) Compatible.
 
@@ -9,7 +9,7 @@ Social login api for Angular 5. Includes Facebook and Google login.
 ### Install via npm 
 
 ```sh
-npm install --save angular5-social-login
+npm install --save angular-6-social-login
 ```
 
 ### Import the module

@@ -132,7 +132,7 @@ gulp.task('rollup:umd', function () {
       // (required for bundles with exports)
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#modulename
       // moduleName: 'angular5-social-login',
-      name: 'angular5-social-login',
+      name: 'angular-6-social-login',
 
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals
       globals: {
@@ -140,7 +140,7 @@ gulp.task('rollup:umd', function () {
       }
 
     }))
-    .pipe(rename('angular5-social-login.umd.js'))
+    .pipe(rename('angular-6-social-login.umd.js'))
     .pipe(gulp.dest(distFolder));
 });
 

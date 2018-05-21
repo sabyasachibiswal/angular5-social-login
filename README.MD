@@ -37,7 +37,7 @@ export function getAuthServiceConfigs() {
         },
         {
           id: GoogleLoginProvider.PROVIDER_ID,
-	      provider: new GoogleLoginProvid("Your-Google-Client-Id")
+	      provider: new GoogleLoginProvider("Your-Google-Client-Id")
         },
       ];
   );
@@ -98,7 +98,7 @@ export class SigninComponent implements OnInit {
       (userData) => {
         console.log(socialPlatform+" sign in data : " , userData);
         // Now sign-in with userData
-        ...
+        // ...
             
       }
     );
@@ -117,7 +117,7 @@ In `signin.component.html`,
 </h1>
 
 <button (click)="socialSignIn('facebook')">Sign in with Facebook</button>
-<button (click)="socialSignIn('google')">Signin in with Google</button>              
+<button (click)="socialSignIn('google')">Sign in with Google</button>              
 ```
 
 

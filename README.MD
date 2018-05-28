@@ -3,7 +3,7 @@
 
 Social login api for Angular 6. Includes Facebook, Google login and Linkedin. 
 
-![Travis](https://img.shields.io/travis/USER/REPO.svg?style=flat-square)
+build | passing
 
 
 [AOT](https://angular.io/guide/aot-compiler) Compatible.

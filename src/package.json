@@ -36,10 +36,10 @@
   "bugs": {
     "url": "https://github.com/high54/angular-6-social-login/issues"
   },
-  "main": "angular5-social-login.umd.js",
-  "module": "angular5-social-login.js",
-  "jsnext:main": "angular5-social-login.js",
-  "typings": "angular5-social-login.d.ts",
+  "main": "angular-6-social-login.umd.js",
+  "module": "angular-6-social-login.js",
+  "jsnext:main": "angular-6-social-login.js",
+  "typings": "angular-6-social-login.d.ts",
   "peerDependencies": {
     "@angular/common": "^5.0.0",
     "@angular/core": "^5.0.0",

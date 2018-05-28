@@ -1,3 +1,5 @@
+# Original project : sabyasachibiswal https://github.com/sabyasachibiswal/angular5-social-login
+
 Social login api for Angular 6. Includes Facebook and Google login.  
 
 [AOT](https://angular.io/guide/aot-compiler) Compatible.
@@ -24,7 +26,7 @@ import {
     AuthServiceConfig,
     GoogleLoginProvider,
     FacebookLoginProvider,
-} from "angular5-social-login";
+} from "angular-6-social-login";
 
 
 // Configs 
@@ -39,6 +41,10 @@ export function getAuthServiceConfigs() {
           id: GoogleLoginProvider.PROVIDER_ID,
 	      provider: new GoogleLoginProvider("Your-Google-Client-Id")
         },
+          {
+            id: LinkedinLoginProvider.PROVIDER_ID,
+            provider: new LinkedinLoginProvider("1098828800522-m2ig6bieilc3tpqvmlcpdvrpvn86q4ks.apps.googleusercontent.com")
+          },
       ];
   );
   return config;
@@ -73,7 +79,7 @@ import {
     AuthService,
     FacebookLoginProvider,
     GoogleLoginProvider
-} from 'angular5-social-login';
+} from 'angular-6-social-login';
 
 @Component({
   selector: 'app-signin',
@@ -92,6 +98,8 @@ export class SigninComponent implements OnInit {
       socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
     }else if(socialPlatform == "google"){
       socialPlatformProvider = GoogleLoginProvider.PROVIDER_ID;
+    } else if (socialPlatform == "linkedin") {
+      socialPlatformProvider = LinkedinLoginProvider.PROVIDER_ID;
     }
     
     this.socialAuthService.signIn(socialPlatformProvider).then(

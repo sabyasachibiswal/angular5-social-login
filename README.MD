@@ -3,7 +3,7 @@
 
 Social login api for Angular 6. Includes Facebook, Google login and Linkedin. 
 
-[![Generic badge](https://img.shields.io/badge/build-passing-green.svg)]
+![Generic badge](https://img.shields.io/badge/build-passing-green.svg)
 
 [AOT](https://angular.io/guide/aot-compiler) Compatible.
 

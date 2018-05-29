@@ -29,6 +29,7 @@ import {
     AuthServiceConfig,
     GoogleLoginProvider,
     FacebookLoginProvider,
+    LinkedinLoginProvider,
 } from "angular-6-social-login";
 
 

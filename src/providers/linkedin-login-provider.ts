@@ -21,7 +21,7 @@ export class LinkedinLoginProvider extends BaseLoginProvider {
           IN.init({
             api_key: this.clientId,
             authorize: true,
-            onLoad: this.onLinkedInLoad()
+            onLoad: this.onLinkedInLoad
           });
 
           IN.Event.on(IN, 'auth', () => {

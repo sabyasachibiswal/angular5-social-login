@@ -46,7 +46,7 @@ export class LinkedinLoginProvider extends BaseLoginProvider {
 
   drawUser(response: LinkedInResponse): SocialUser {
     let user: SocialUser = new SocialUser();
-    user.id = response.emailAddress;
+    user.id = response.id;
     user.name = response.firstName + ' ' + response.lastName;
     user.email = response.emailAddress;
     user.image = response.pictureUrl;

@@ -53,7 +53,7 @@ export class GoogleLoginProvider extends BaseLoginProvider {
       let promise = this.auth2.signIn();
       promise.then(() => {
         resolve(this.drawUser());
-      });
+      }),(err)=>{reject(err);};
     });
   }
 

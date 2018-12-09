@@ -58,7 +58,7 @@ export class AuthService {
           resolve(user);
           this._user = user;
           this._authState.next(user);
-        });
+        },(err)=>{reject(err);});
       } else {
         reject(AuthService.LOGIN_PROVIDER_NOT_FOUND);
       }

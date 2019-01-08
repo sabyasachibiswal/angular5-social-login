@@ -1,5 +1,10 @@
-Social login api for Angular 5. Includes Facebook and Google login.  
+# Original project : sabyasachibiswal https://github.com/sabyasachibiswal/angular5-social-login
 
+
+Social login api for Angular 6. Includes Facebook, Google login and Linkedin. 
+
+![Generic badge](https://img.shields.io/badge/build-passing-green.svg)
+![Generic badge](https://img.shields.io/badge/Angular-6-green.svg)
 [AOT](https://angular.io/guide/aot-compiler) Compatible.
 
 
@@ -9,7 +14,7 @@ Social login api for Angular 5. Includes Facebook and Google login.
 ### Install via npm 
 
 ```sh
-npm install --save angular5-social-login
+npm install --save angular-6-social-login
 ```
 
 ### Import the module
@@ -24,7 +29,8 @@ import {
     AuthServiceConfig,
     GoogleLoginProvider,
     FacebookLoginProvider,
-} from "angular5-social-login";
+    LinkedinLoginProvider,
+} from "angular-6-social-login";
 
 
 // Configs 
@@ -39,6 +45,10 @@ export function getAuthServiceConfigs() {
           id: GoogleLoginProvider.PROVIDER_ID,
 	      provider: new GoogleLoginProvider("Your-Google-Client-Id")
         },
+          {
+            id: LinkedinLoginProvider.PROVIDER_ID,
+            provider: new LinkedinLoginProvider("1098828800522-m2ig6bieilc3tpqvmlcpdvrpvn86q4ks.apps.googleusercontent.com")
+          },
       ];
   );
   return config;
@@ -73,7 +83,7 @@ import {
     AuthService,
     FacebookLoginProvider,
     GoogleLoginProvider
-} from 'angular5-social-login';
+} from 'angular-6-social-login';
 
 @Component({
   selector: 'app-signin',
@@ -92,13 +102,15 @@ export class SigninComponent implements OnInit {
       socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
     }else if(socialPlatform == "google"){
       socialPlatformProvider = GoogleLoginProvider.PROVIDER_ID;
+    } else if (socialPlatform == "linkedin") {
+      socialPlatformProvider = LinkedinLoginProvider.PROVIDER_ID;
     }
     
     this.socialAuthService.signIn(socialPlatformProvider).then(
       (userData) => {
         console.log(socialPlatform+" sign in data : " , userData);
         // Now sign-in with userData
-        ...
+        // ...
             
       }
     );
@@ -117,7 +129,7 @@ In `signin.component.html`,
 </h1>
 
 <button (click)="socialSignIn('facebook')">Sign in with Facebook</button>
-<button (click)="socialSignIn('google')">Signin in with Google</button>              
+<button (click)="socialSignIn('google')">Sign in with Google</button>              
 ```
 
 

@@ -22,9 +22,9 @@ export class GoogleLoginProvider extends BaseLoginProvider {
           gapi.load('auth2', () => {
             this.auth2 = gapi.auth2.init({
               client_id: this.clientId,
-              scope: 'email'
+                scope: 'email',
+                plugin_name:'socialplugin_with_old_js'
             });
-
             this.auth2.then(() => {
               if (this.auth2.isSignedIn.get()) {
                 resolve(this.drawUser());
